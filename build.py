@@ -1,0 +1,1 @@
+import zipfile;zipfile.ZipFile("ahmed-javed-aso-site.zip").extractall("out");p="out/ahmed-javed-aso/index.html";t=open(p,encoding="utf-8").read();m="<!-- ============ PLATFORMS ============ -->";s=open("paid-ads.txt",encoding="utf-8").read();assert m in t;open(p,"w",encoding="utf-8").write(t.replace(m,s+"\n"+m,1));print("built")
